@@ -41,6 +41,32 @@ public class Main{
 
 
 
+        Customer customer = new Customer();
+        customer.id=101;
+        customer.name = "Ramesh";
+        customer.gender = "M";
+        customer.emailAddress="rap53748@gmail.com";
+        customer.adress="7-16-20/90EB,SriramNagar,7th ward, Giddalur";
+        customer.age = 22;
+        customer.mobileNumber=8096220210L;
+        customer.addToCartCOunt=20;
+        customer.orders=15;
+        customer.coupons="WINTER25";
+        customer.activeStatus =true;
+        System.out.println("id=" + customer.id);
+        System.out.println("name=" + customer.name);
+        System.out.println("gender=" + customer.gender);
+        System.out.println("emailAddress="+customer.emailAddress);
+        System.out.println("adress="+customer.adress);
+        System.out.println("age="+customer.age);
+        System.out.println("mobileNumber="+customer.mobileNumber);
+        System.out.println("addToCartCount="+customer.addToCartCOunt);
+        System.out.println("orders="+customer.orders);
+        System.out.println("coupons="+customer.coupons);
+        System.out.println("activeStatus"+customer.activeStatus);
+
+
+
 
     }
 
