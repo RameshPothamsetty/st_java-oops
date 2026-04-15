@@ -64,6 +64,7 @@ public class Main{
         System.out.println("orders="+customer.orders);
         System.out.println("coupons="+customer.coupons);
         System.out.println("activeStatus"+customer.activeStatus);
+        System.out.println("1");
 
 
 
