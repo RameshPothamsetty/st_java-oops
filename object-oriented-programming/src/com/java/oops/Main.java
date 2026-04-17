@@ -1,6 +1,9 @@
-package com.java.oops ;
+package com.java.oops;
 
-public class Main{
+public class Main {
+    public Main() {
+    }
+
     public static void main(String[] args) {
 
 
@@ -10,8 +13,8 @@ public class Main{
         product.maxRetailPrice = 10000L;
         product.rating = 4.5F;
         product.reviewsCount = 100;
-        product.discountPercentage= 25;
-        product.isAvailable= true ;
+        product.discountPercentage = 25;
+        product.isAvailable = true;
         System.out.println("id = " + product.id);
         System.out.println("name = " + product.name);
         System.out.println("maxRetailPrice = " + product.maxRetailPrice);
@@ -21,18 +24,16 @@ public class Main{
         System.out.println("isAvailable = " + product.isAvailable);
 
 
-
-
         Product product1 = new Product();
-        product1.id =1;
+        product1.id = 1;
         product1.name = "Samsung Galaxy Book4 Metal Intel";
         product1.maxRetailPrice = 43990L;
         product1.rating = 4.4F;
         product1.reviewsCount = 1065;
         product1.discountPercentage = 23;
-        product1.isAvailable= true;
-        System.out.println("id="+ product1.id);
-        System.out.println("name="+ product1.name);
+        product1.isAvailable = true;
+        System.out.println("id=" + product1.id);
+        System.out.println("name=" + product1.name);
         System.out.println("maxRetailPrice =" + product1.maxRetailPrice);
         System.out.println("rating = " + product1.rating);
         System.out.println("reviewsCount = " + product1.reviewsCount);
@@ -40,33 +41,57 @@ public class Main{
         System.out.println("isAvailable = " + product1.isAvailable);
 
 
-
         Customer customer = new Customer();
-        customer.id=101;
+        customer.id = 101;
         customer.name = "Ramesh";
         customer.gender = "M";
-        customer.emailAddress="rap53748@gmail.com";
-        customer.adress="7-16-20/90EB,SriramNagar,7th ward, Giddalur";
+        customer.emailAddress = "rap53748@gmail.com";
+        customer.adress = "7-16-20/90EB,SriramNagar,7th ward, Giddalur";
         customer.age = 22;
-        customer.mobileNumber=8096220210L;
-        customer.addToCartCOunt=20;
-        customer.orders=15;
-        customer.coupons="WINTER25";
-        customer.activeStatus =true;
+        customer.mobileNumber = 8096220210L;
+        customer.addToCartCOunt = 20;
+        customer.orders = 15;
+        customer.coupons = "WINTER25";
+        customer.activeStatus = true;
         System.out.println("id=" + customer.id);
         System.out.println("name=" + customer.name);
         System.out.println("gender=" + customer.gender);
-        System.out.println("emailAddress="+customer.emailAddress);
-        System.out.println("adress="+customer.adress);
-        System.out.println("age="+customer.age);
-        System.out.println("mobileNumber="+customer.mobileNumber);
-        System.out.println("addToCartCount="+customer.addToCartCOunt);
-        System.out.println("orders="+customer.orders);
-        System.out.println("coupons="+customer.coupons);
-        System.out.println("activeStatus"+customer.activeStatus);
+        System.out.println("emailAddress=" + customer.emailAddress);
+        System.out.println("adress=" + customer.adress);
+        System.out.println("age=" + customer.age);
+        System.out.println("mobileNumber=" + customer.mobileNumber);
+        System.out.println("addToCartCount=" + customer.addToCartCOunt);
+        System.out.println("orders=" + customer.orders);
+        System.out.println("coupons=" + customer.coupons);
+        System.out.println("activeStatus" + customer.activeStatus);
         System.out.println("1");
 
 
+        Customer customer1= new Customer();
+        System.out.println("id=" + customer1.id);
+        System.out.println("name=" + customer1.name);
+        System.out.println("gender=" + customer1.gender);
+        System.out.println("emailAddress=" + customer1.emailAddress);
+        System.out.println("adress=" + customer1.adress);
+        System.out.println("age=" + customer1.age);
+        System.out.println("mobileNumber=" + customer1.mobileNumber);
+        System.out.println("addToCartCount=" + customer1.addToCartCOunt);
+        System.out.println("orders=" + customer1.orders);
+        System.out.println("coupons=" + customer1.coupons);
+        System.out.println("activeStatus" + customer1.activeStatus);
+
+        Customer customer2=new Customer(102,"Ravi","M","erifuki@gmail.com","Giddalur",23,9705470305L,24,20,"SUNDAYMORNING2025",true);
+        System.out.println("id=" + customer2.id);
+        System.out.println("name=" + customer2.name);
+        System.out.println("gender=" + customer2.gender);
+        System.out.println("emailAddress=" + customer2.emailAddress);
+        System.out.println("adress=" + customer2.adress);
+        System.out.println("age=" + customer2.age);
+        System.out.println("mobileNumber=" + customer2.mobileNumber);
+        System.out.println("addToCartCount=" + customer2.addToCartCOunt);
+        System.out.println("orders=" + customer2.orders);
+        System.out.println("coupons=" + customer2.coupons);
+        System.out.println("activeStatus" + customer2.activeStatus);
 
 
     }
