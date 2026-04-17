@@ -27,10 +27,6 @@ public class Customer {
         coupons="SUNDAYSPECIAL2026";
         activeStatus=true;
 
-
-
-
-
     }
     //Argument Constructor
     public Customer(int id, String name, String gender, String emailAddress, String adress, int age, Long mobileNumber, int addToCartCOunt, int orders, String coupons, boolean activeStatus) {

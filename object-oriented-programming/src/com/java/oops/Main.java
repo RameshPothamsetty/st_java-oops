@@ -94,6 +94,24 @@ public class Main {
         System.out.println("activeStatus" + customer2.activeStatus);
 
 
+        Product product2=new Product();
+        System.out.println("id=" + product2.id);
+        System.out.println("name=" + product2.name);
+        System.out.println("maxRetailPrice =" + product2.maxRetailPrice);
+        System.out.println("rating = " + product2.rating);
+        System.out.println("reviewsCount = " + product2.reviewsCount);
+        System.out.println("discountPercentage =" + product2.discountPercentage);
+        System.out.println("isAvailable = " + product2.isAvailable);
+
+        Product product3=new Product(111,"riya",40000L,3.7F,40,(byte)35,true);
+        System.out.println("id=" + product3.id);
+        System.out.println("name=" + product3.name);
+        System.out.println("maxRetailPrice =" + product3.maxRetailPrice);
+        System.out.println("rating = " + product3.rating);
+        System.out.println("reviewsCount = " + product3.reviewsCount);
+        System.out.println("discountPercentage =" + product3.discountPercentage);
+        System.out.println("isAvailable = " + product3.isAvailable);
+
     }
 
 
