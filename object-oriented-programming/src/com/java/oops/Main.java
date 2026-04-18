@@ -112,6 +112,53 @@ public class Main {
         System.out.println("discountPercentage =" + product3.discountPercentage);
         System.out.println("isAvailable = " + product3.isAvailable);
 
+
+
+        Order order1=new Order();
+        System.out.println("orderId=" + order1.orderId);
+        System.out.println("orderNumber=" + order1.orderNumber);
+        System.out.println("customerId=" + order1.customerId);
+        System.out.println("orderDate=" + order1.orderDate);
+        System.out.println("totalAmount=" + order1.totalAmount);
+        System.out.println("orderStatus=" + order1.orderStatus);
+        System.out.println("isGift=" + order1.isGift);
+        System.out.println("shippingAddress=" + order1.shipppingAddress);
+
+        Order order2;
+        order2 = new Order(2,"102", (long) 105432L,"23-04-2026", 40000.0, (byte) 2,true,"Ongole");
+
+        System.out.println("orderId=" + order2.orderId);
+        System.out.println("orderNumber=" + order2.orderNumber);
+        System.out.println("customerId=" + order2.customerId);
+        System.out.println("orderDate=" + order2.orderDate);
+        System.out.println("totalAmount=" + order2.totalAmount);
+        System.out.println("orderStatus=" + order2.orderStatus);
+        System.out.println("isGift=" + order2.isGift);
+        System.out.println("shippingAddress=" + order2.shipppingAddress);
+
+
+        Payment payment1=new Payment();
+        System.out.println("paymentId=" + payment1.paymentId);
+        System.out.println("orderId=" + payment1.orderId);
+        System.out.println("amount=" + payment1.amount);
+        System.out.println("paymentMethod=" + payment1.paymentMethod);
+        System.out.println("paymentStatus=" + payment1.paymentStatus);
+        System.out.println("transactionId=" + payment1.transactionId);
+        System.out.println("paidAt=" + payment1.paidAt);
+        System.out.println("isRefunded=" + payment1.isRefunded);
+
+
+        Payment payment2=new Payment(11,1234563L, 30000.0,"Online", (byte) 1,"5647090","Work",false);
+        System.out.println("paymentId=" + payment2.paymentId);
+        System.out.println("orderId=" + payment2.orderId);
+        System.out.println("amount=" + payment2.amount);
+        System.out.println("paymentMethod=" + payment2.paymentMethod);
+        System.out.println("paymentStatus=" + payment2.paymentStatus);
+        System.out.println("transactionId=" + payment2.transactionId);
+        System.out.println("paidAt=" + payment2.paidAt);
+        System.out.println("isRefunded=" + payment2.isRefunded);
+
+
     }
 
 
