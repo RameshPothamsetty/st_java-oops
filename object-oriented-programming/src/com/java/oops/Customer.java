@@ -42,6 +42,23 @@ public class Customer {
         this.coupons = coupons;
         this.activeStatus = activeStatus;
     }
+
+
+    void displayCustomerDetails(){
+        Customer customer =new Customer();
+        System.out.println("id=" + customer.id);
+        System.out.println("name=" + customer.name);
+        System.out.println("gender=" + customer.gender);
+        System.out.println("emailAddress=" + customer.emailAddress);
+        System.out.println("adress=" + customer.adress);
+        System.out.println("age=" + customer.age);
+        System.out.println("mobileNumber=" + customer.mobileNumber);
+        System.out.println("addToCartCount=" + customer.addToCartCOunt);
+        System.out.println("orders=" + customer.orders);
+        System.out.println("coupons=" + customer.coupons);
+        System.out.println("activeStatus" + customer.activeStatus);
+        System.out.println("1");
+    }
 }
 
 

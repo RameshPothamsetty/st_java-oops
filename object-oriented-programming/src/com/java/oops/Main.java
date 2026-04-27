@@ -15,13 +15,8 @@ public class Main {
         product.reviewsCount = 100;
         product.discountPercentage = 25;
         product.isAvailable = true;
-        System.out.println("id = " + product.id);
-        System.out.println("name = " + product.name);
-        System.out.println("maxRetailPrice = " + product.maxRetailPrice);
-        System.out.println("rating = " + product.rating);
-        System.out.println("reviewsCount = " + product.reviewsCount);
-        System.out.println("discountPercentage =" + product.discountPercentage);
-        System.out.println("isAvailable = " + product.isAvailable);
+        product.displayProductDetails();
+
 
 
         Product product1 = new Product();
@@ -32,14 +27,15 @@ public class Main {
         product1.reviewsCount = 1065;
         product1.discountPercentage = 23;
         product1.isAvailable = true;
-        System.out.println("id=" + product1.id);
-        System.out.println("name=" + product1.name);
-        System.out.println("maxRetailPrice =" + product1.maxRetailPrice);
-        System.out.println("rating = " + product1.rating);
-        System.out.println("reviewsCount = " + product1.reviewsCount);
-        System.out.println("discountPercentage =" + product1.discountPercentage);
-        System.out.println("isAvailable = " + product1.isAvailable);
+        product1.displayProductDetails();
+        product1.displayProductByCompany("Samsung");
+        product1.displayProductByCategoryAndManufacturedYear("Laptop",2026);
 
+        long totalInventoryValue = product1.totalInventoryValue();
+        System.out.println("Total Inventory value = " + product1.totalInventoryValue());
+
+        long totalEarnings = product1.totalEarnings(2023);
+        System.out.println("Total Earnings = " + totalEarnings);
 
         Customer customer = new Customer();
         customer.id = 101;
@@ -53,46 +49,14 @@ public class Main {
         customer.orders = 15;
         customer.coupons = "WINTER25";
         customer.activeStatus = true;
-        System.out.println("id=" + customer.id);
-        System.out.println("name=" + customer.name);
-        System.out.println("gender=" + customer.gender);
-        System.out.println("emailAddress=" + customer.emailAddress);
-        System.out.println("adress=" + customer.adress);
-        System.out.println("age=" + customer.age);
-        System.out.println("mobileNumber=" + customer.mobileNumber);
-        System.out.println("addToCartCount=" + customer.addToCartCOunt);
-        System.out.println("orders=" + customer.orders);
-        System.out.println("coupons=" + customer.coupons);
-        System.out.println("activeStatus" + customer.activeStatus);
-        System.out.println("1");
+        customer.displayCustomerDetails();
 
 
         Customer customer1= new Customer();
-        System.out.println("id=" + customer1.id);
-        System.out.println("name=" + customer1.name);
-        System.out.println("gender=" + customer1.gender);
-        System.out.println("emailAddress=" + customer1.emailAddress);
-        System.out.println("adress=" + customer1.adress);
-        System.out.println("age=" + customer1.age);
-        System.out.println("mobileNumber=" + customer1.mobileNumber);
-        System.out.println("addToCartCount=" + customer1.addToCartCOunt);
-        System.out.println("orders=" + customer1.orders);
-        System.out.println("coupons=" + customer1.coupons);
-        System.out.println("activeStatus" + customer1.activeStatus);
+        customer1.displayCustomerDetails();
 
         Customer customer2=new Customer(102,"Ravi","M","erifuki@gmail.com","Giddalur",23,9705470305L,24,20,"SUNDAYMORNING2025",true);
-        System.out.println("id=" + customer2.id);
-        System.out.println("name=" + customer2.name);
-        System.out.println("gender=" + customer2.gender);
-        System.out.println("emailAddress=" + customer2.emailAddress);
-        System.out.println("adress=" + customer2.adress);
-        System.out.println("age=" + customer2.age);
-        System.out.println("mobileNumber=" + customer2.mobileNumber);
-        System.out.println("addToCartCount=" + customer2.addToCartCOunt);
-        System.out.println("orders=" + customer2.orders);
-        System.out.println("coupons=" + customer2.coupons);
-        System.out.println("activeStatus" + customer2.activeStatus);
-
+        customer2.displayCustomerDetails();
 
         Product product2=new Product();
         System.out.println("id=" + product2.id);
@@ -160,6 +124,7 @@ public class Main {
 
 
     }
+
 
 
 }
