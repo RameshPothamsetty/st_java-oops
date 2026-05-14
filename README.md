@@ -1,7 +1,7 @@
 CODING PROBLEMS
 
 1.Problem Statement: 
-Reverse a without using built in  reverse methods and use loops to reverse  a String 
+Reverse a String without using built in  reverse methods and use loops to reverse it.
 Code:
 import java.util.Scanner;
 
