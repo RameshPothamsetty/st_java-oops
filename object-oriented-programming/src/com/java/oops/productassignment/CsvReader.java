@@ -23,6 +23,7 @@ import java.util.List;
                 BufferedReader br = new BufferedReader(new FileReader("C://products.csv"));
             /*System.out.println( br.readLine());
             System.out.println(br.readLine());*/
+
                 br.readLine();
                 String productData = br.readLine();
                 while(productData != null){
@@ -33,8 +34,8 @@ import java.util.List;
                     product.setMaxRetailPrice(Integer.parseInt(data[2]));
                     product.setDiscountPercentage(Integer.parseInt(data[3]));
                     product.setAvailable(Boolean.parseBoolean(data[4]));
-                    product.setCompany(data[5]);
-                    product.setCategory(data[6]);
+                    product.setCompany(Company.valueOf(data[5]));
+                    product.setCategory(Category.valueOf(data[6]));
                     product.setManufacturedYear(Integer.parseInt(data[7]));
                     products.add(product);
                     productData = br.readLine();

@@ -1,4 +1,4 @@
-package product_assignment;
+package product.assignment;
 
 import java.util.ArrayList;
 import java.util.List;

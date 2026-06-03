@@ -3,7 +3,7 @@ package com.java.oops;
 public class Customer {
     int id;
     String name;
-    String gender;
+    String  gender;
     String emailAddress;
     String adress;
     int age;

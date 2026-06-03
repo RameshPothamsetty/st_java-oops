@@ -1,4 +1,4 @@
-package product_assignment;
+package product.assignment;
 
 import java.util.List;
 

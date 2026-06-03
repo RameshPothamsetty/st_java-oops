@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/com.java.practice/com.java.practice.iml" filepath="$PROJECT_DIR$/com.java.practice/com.java.practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../../Java telusko/java_practice_nonstop/java_practice_nonstop.iml" filepath="$PROJECT_DIR$/../../../../../../Java telusko/java_practice_nonstop/java_practice_nonstop.iml" />
       <module fileurl="file://$PROJECT_DIR$/object-oriented-programming.iml" filepath="$PROJECT_DIR$/object-oriented-programming.iml" />
     </modules>
   </component>

@@ -14,10 +14,12 @@ package com.java.oops.productassignment;
             product.setMaxRetailPrice(32432);
             product.setDiscountPercentage(10);
             product.setAvailable(true);
-            product.setCompany("Samsung");
-            product.setCategory("TV");
+            product.setCategory(Category.ELECTRONICS);
+            product.setCompany(Company.APPLE);
             product.setManufacturedYear(2023);
             productService.addProduct(product);
+
+
             System.out.println(productService.getAllProducts());
 
         }

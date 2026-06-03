@@ -1,4 +1,4 @@
-package product_assignment;
+package product.assignment;
 
 public class ProductUi {
     private ProductHandler handler;

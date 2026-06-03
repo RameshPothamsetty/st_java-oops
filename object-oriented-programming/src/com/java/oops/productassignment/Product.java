@@ -8,8 +8,8 @@ public class Product {
     private int maxRetailPrice;
     private int discountPercentage;
     private boolean isAvailable;
-    private String company;
-    private String category;
+    private Company  company;
+    private Category category;
     private int manufacturedYear;
 
     public int getId() {
@@ -52,19 +52,19 @@ public class Product {
         isAvailable = available;
     }
 
-    public String getCompany() {
+    public Company getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 
-    public String getCategory() {
-        return category;
+    public String getCategory(Category category, String Category) {
+    return Category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(Category category) {
         this.category = category;
     }
 
